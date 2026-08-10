@@ -31,24 +31,17 @@
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/ardakrt/opencodex">OpenCodex</a></h3>
-      <p>Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code.</p>
-      <p><code>TypeScript</code> • <code>AI Proxy</code> • <code>Open Source</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/ardakrt/orca">Orca ADE</a></h3>
-      <p>Agent Development Environment for managing fleets of parallel AI coding agents with custom subscriptions across Desktop, Mobile, and VPS.</p>
-      <p><code>TypeScript</code> • <code>AI Fleet</code> • <code>Multi-Platform</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
       <h3><a href="https://github.com/ardakrt/authly">Authly</a></h3>
       <p>Windows-first, secure offline desktop authenticator designed for privacy, speed, and reliability.</p>
       <p><code>TypeScript</code> • <code>Desktop App</code> • <code>Security</code></p>
     </td>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
+      <h3><a href="https://github.com/ardakrt/strmly-player">Strmly Player</a></h3>
+      <p>Modern, responsive web-based video and media player interface built for smooth streaming performance.</p>
+      <p><code>TypeScript</code> • <code>Media Player</code> • <code>Web</code></p>
+    </td>
+    <td width="33%" valign="top">
       <h3><a href="https://github.com/ardakrt/ardakaratas.com.tr">Portfolio</a></h3>
       <p>Personal digital business card and minimalist portfolio built with React & Tailwind CSS.</p>
       <p><code>React</code> • <code>TailwindCSS</code> • <code>Web</code></p>
