@@ -8,17 +8,17 @@
 
 <!-- TOP ROW: STATS & MOST USED LANGUAGES (NO ICONS, RED ACCENT) -->
 <a href="https://github.com/ardakrt">
-  <img height="185" src="https://github-readme-stats.vercel.app/api?username=ardakrt&show_icons=false&title_color=C41E3A&text_color=FFFFFF&bg_color=0D1117&border_color=0D1117&hide_border=true" />
+  <img height="185" src="https://github-readme-stats-fast.vercel.app/api?username=ardakrt&show_icons=false&title_color=C41E3A&text_color=FFFFFF&bg_color=0D1117&border_color=0D1117&hide_border=true" alt="Arda Karataş GitHub Stats" />
 </a>
 <a href="https://github.com/ardakrt">
-  <img height="185" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ardakrt&layout=compact&title_color=C41E3A&text_color=FFFFFF&bg_color=0D1117&border_color=0D1117&hide_border=true" />
+  <img height="185" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ardakrt&layout=compact&title_color=C41E3A&text_color=FFFFFF&bg_color=0D1117&border_color=0D1117&hide_border=true" alt="Most Used Languages" />
 </a>
 
 <br/><br/>
 
 <!-- MIDDLE ROW: STREAK STATS (RED ACCENT) -->
 <a href="https://github.com/ardakrt">
-  <img src="https://streak-stats.demolab.com/?user=ardakrt&theme=dark&background=0D1117&border=0D1117&hide_border=true&currStreakNum=C41E3A&fire=C41E3A&sideNums=FFFFFF&sideLabels=8B949E&dates=8B949E&ring=C41E3A" />
+  <img src="https://streak-stats.demolab.com/?user=ardakrt&theme=dark&background=0D1117&border=0D1117&hide_border=true&currStreakNum=C41E3A&fire=C41E3A&sideNums=FFFFFF&sideLabels=8B949E&dates=8B949E&ring=C41E3A" alt="GitHub Streak" />
 </a>
 
 </div>
@@ -62,7 +62,7 @@
 
 <!-- BOTTOM ROW: ACTIVITY GRAPH -->
 <a href="https://github.com/ardakrt">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ardakrt&theme=react-dark&bg_color=0D1117&color=C41E3A&line=C41E3A&point=FFFFFF&area=true&hide_border=true" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ardakrt&theme=react-dark&bg_color=0D1117&color=C41E3A&line=C41E3A&point=FFFFFF&area=true&hide_border=true" width="100%" alt="Activity Graph" />
 </a>
 
 <br/><br/>
