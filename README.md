@@ -47,7 +47,7 @@
 <div align="center">
 
 <!-- BOTTOM ROW: ACTIVITY GRAPH -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ardakrt&theme=react-dark&bg_color=0D1117&color=C41E3A&line=C41E3A&point=FFFFFF&area=true&hide_border=true" width="100%" alt="Activity Graph" />
+<img src="assets/activity.svg" width="100%" alt="GitHub contributions over the last 31 days; updated daily" />
 
 <br/><br/>
 
