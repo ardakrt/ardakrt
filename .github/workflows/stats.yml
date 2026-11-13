@@ -1,0 +1,58 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: '45 */6 * * *'
+  push:
+    paths:
+      - '.github/workflows/stats.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=false&title_color=C41E3A&text_color=FFFFFF&bg_color=0D1117&border_color=0D1117&hide_border=true
+          path: assets/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&title_color=C41E3A&text_color=FFFFFF&bg_color=0D1117&border_color=0D1117&hide_border=true
+          path: assets/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate streak card
+        uses: DenverCoder1/github-readme-streak-stats@v1
+        with:
+          options: user=${{ github.repository_owner }}&theme=dark&background=0D1117&border=0D1117&hide_border=true&currStreakNum=C41E3A&fire=C41E3A&sideNums=FFFFFF&sideLabels=8B949E&dates=8B949E&ring=C41E3A
+          path: assets/streak.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Save refreshed cards
+        run: |
+          git add assets/stats.svg assets/top-langs.svg assets/streak.svg
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'docs: refresh profile stats cards'
+          git pull --rebase
+          git push
